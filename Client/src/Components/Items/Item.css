@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: Poppins;
+}
+.item{
+    width: 250px;
+}
+.item img{
+    width: 250px;
+}
+.item p{
+    margin:0px 0px;
+}
+.item-prices{
+    display: flex;
+    gap:20px;
+}
+.item-price-new{
+    margin: 5px 30px;
+    color:#374152;
+    font-size: 18px;
+    font-weight: 600;
+}
+.item-price-old{
+    margin: 5px 0px;
+    color:#8c8c8c;
+    font-size:18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.item:hover{
+    transform: scale(1.05);
+    transition: 0.6s ;
+}
+.item img{
+    width: 250px;
+    margin: 20px 25px;
+    height: 280px;
+    border-radius: 10px;
+}
+.item .name{
+    margin: -10px 25px;
+    width: 250px;
+}
+/* Responsive Adjustments */
+@media(max-width:1280px)
+{
+    .item{
+        width: 180px;
+        font-size: 14px;
+    }
+    .item img{
+        width: 180px;
+        gap:10px;
+    }
+    .item-price-old{
+        font-size: 10px;
+    }
+    .item .name{
+        width: 180px;
+    }
+    .item-price-new{
+        font-size: 15px;
+    }
+
+}
+@media (max-width:1024px) {
+    .item{
+        width: 150px;
+        font-size: 13px;
+    }
+    .item img{
+        width: 150px;
+    }
+    .item .name{
+        width: 150px;
+        font-size: 15px;
+    }
+    .item-price-old{
+        font-size: 13px;
+    }
+}
+@media (max-width:800px) {
+    .item{
+        width: 120px;
+        font-size: 12px;
+    }
+    .item img{
+        width: 120px;
+    }
+    .item .name{
+        width: 120px;
+        font-size: 10px;
+    }
+    .item-price-old{
+        font-size: 12px;
+    }
+}
+@media (max-width:500px) {
+    .item{
+        width: 160px;
+    }
+    .item img{
+        width: 160px;
+    }
+}
